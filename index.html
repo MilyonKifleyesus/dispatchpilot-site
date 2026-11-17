@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DispatchPilot — Send dispatch email from your own Gmail</title>
+<meta name="description" content="DispatchPilot is a Chrome extension that helps dispatch teams send email from their own Gmail. It sends only what you ask and never reads your inbox.">
+<meta property="og:title" content="DispatchPilot">
+<meta property="og:description" content="A Chrome extension that helps dispatch teams send email from their own Gmail.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#E8EDF1" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0A1024" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800&family=Instrument+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400&display=swap">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<div class="wrap">
+  <header class="top">
+    <a class="brand" href="./" aria-label="DispatchPilot home"><i aria-hidden="true"></i>DispatchPilot</a>
+    <nav class="nav" aria-label="Main">
+      <a class="wide" href="#features">Features</a>
+      <a class="wide" href="#how">How it works</a>
+      <a href="privacy/">Privacy Policy</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="mono">Chrome extension for dispatch teams</div>
+      <h1><span class="ln"><span>Sent from</span></span><span class="ln"><span><em>your</em> Gmail.</span></span></h1>
+
+      <div class="hero-grid">
+        <div>
+          <p class="lede">DispatchPilot sends your load emails from your own Gmail address, so every broker hears from a dispatcher they know.</p>
+          <div class="cta-row">
+            <a class="btn primary" href="#how">See how it works</a>
+            <a class="btn" href="#contact">Contact us</a>
+          </div>
+        </div>
+
+        <div class="mail" id="mail">
+          <div class="mail-head"><span class="mono">New email · example</span><span class="mono">Load 48213</span></div>
+          <dl>
+            <dt>From</dt><dd><b>you@yourcompany.com</b></dd>
+            <dt>To</dt><dd>broker@example.com</dd>
+            <dt>Subject</dt><dd>Truck available: Laredo, TX to Toronto, ON</dd>
+          </dl>
+          <div class="mail-body">
+            <p>Hi Dana,</p>
+            <p>We have a 53' dry van empty in Laredo tomorrow morning and can cover your Toronto load. Send the rate con to this address and we will confirm today.</p>
+            <p>Thanks,<br>Sam, Dispatch</p>
+          </div>
+          <div class="mail-foot">
+            <span class="mono" id="status" role="status" aria-live="polite">Draft ready</span>
+            <button class="btn primary" type="button" id="send">Send</button>
+          </div>
+          <div class="stamp" aria-hidden="true">Sent</div>
+        </div>
+      </div>
+    </section>
+
+    <div class="lane" id="lane">
+      <section class="sec" data-side="left" id="what" aria-labelledby="what-h">
+        <div class="mono" id="what-h">What DispatchPilot does</div>
+        <p class="statement" data-words>DispatchPilot is a Chrome extension for dispatch teams. You pick the load, check the email and press Send. It goes out through your own Gmail, under your own name, and the reply comes back to your inbox.</p>
+      </section>
+
+      <section class="sec" data-side="right" id="features" aria-labelledby="feat-h">
+        <div class="mono">Features</div>
+        <h2 id="feat-h">Three things it does well.</h2>
+        <div class="feat">
+          <article>
+            <h3>Your address on every email</h3>
+            <p>Emails go out through your own Gmail account, so brokers see a name they know and replies land in your inbox.</p>
+          </article>
+          <article>
+            <h3>Built for the whole team</h3>
+            <p>Invite your dispatchers, approve who joins, and work the same board together.</p>
+          </article>
+          <article>
+            <h3>Sends only what you ask</h3>
+            <p>DispatchPilot does not read your inbox. It sends an email when you press Send, and at no other time.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="sec" data-side="left" id="how" aria-labelledby="how-h">
+        <div class="mono">How it works</div>
+        <h2 id="how-h">On the road in three steps.</h2>
+        <ol class="steps">
+          <li><div><h3>Add DispatchPilot to Chrome</h3><p>Install the extension and sign in with Google. At sign-in we ask only for your name and email.</p></div></li>
+          <li><div><h3>Connect Gmail</h3><p>When you are ready to send, connect your Gmail. This is the only time we ask for permission to send email for you.</p></div></li>
+          <li><div><h3>Press Send</h3><p>Review the email, press Send, and it leaves from your own address.</p></div></li>
+        </ol>
+      </section>
+
+      <section class="end" id="contact" aria-labelledby="contact-h">
+        <div class="mono">Delivered</div>
+        <h2 id="contact-h">Talk to us.</h2>
+        <a class="addr" href="mailto:mili.kifleyesus@gmail.com">mili.kifleyesus@gmail.com</a>
+        <p>Questions, help getting set up, or a request to delete your data all go to this address.</p>
+        <button class="btn" type="button" id="copy" data-copy="mili.kifleyesus@gmail.com">Copy address</button>
+      </section>
+    </div>
+  </main>
+
+  <footer class="foot">
+    <div>© 2026 DispatchPilot</div>
+    <nav aria-label="Footer">
+      <a href="privacy/">Privacy Policy</a>
+      <a href="mailto:mili.kifleyesus@gmail.com">mili.kifleyesus@gmail.com</a>
+    </nav>
+  </footer>
+</div>
+
+<script src="assets/vendor/gsap.min.js" defer></script>
+<script src="assets/vendor/ScrollTrigger.min.js" defer></script>
+<script src="assets/vendor/lenis.min.js" defer></script>
+<script src="assets/site.js" defer></script>
+</body>
+</html>
